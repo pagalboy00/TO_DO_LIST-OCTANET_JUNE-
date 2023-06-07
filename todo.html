@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>✔️ To Do List</title>
+<!-- <title>To-Do List</title> -->
+<link rel="stylesheet" type="text/css" href="todo.css">
+</head>
+<body>
+    <div id="box">
+    <h1>🗊To-Do List🗊</h1>
+    <input type="text" id="taskInput" placeholder="Add a new task">
+    <button onclick="addTask()">Add Task</button>
+
+    <div id="filters">
+        <button onclick="filterAll()">All</button>
+        <button class="btn" onclick="filterHighPriority()">High Priority</button>
+        <button class="btn" onclick="filterLowPriority()">Low Priority</button>
+    </div>
+    </div>
+    <div id="task">
+    <ul id="taskList"></ul>
+    </div>
+    <div class="ft">
+    <div class="lg">
+        <h2>Help</h2>
+        <ul>
+            
+            <h3>Location:- Hiran Mangri,Udaipur(Raj.),313602</h3>
+            <h3>Support:- support123@gmail.com</h3>
+            <h3>Contect:- 45683592923</h3>
+            
+        </ul>
+    </div>
+    <div class="footer">
+        <div >
+            &copy; 2023 TO DO List - All Rights Reserved
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

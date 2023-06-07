@@ -1,0 +1,137 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    margin: 10px;
+    padding: 20px;
+    background-color: violet;
+    text-align: center;
+    background: radial-gradient(circle at center, red 0, blue, green 100%);
+}  
+h1 {
+    text-align: center;
+}
+
+#taskInput {
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* button {
+    padding: 5px 10px;
+    font-size: 14px;
+} */
+button{
+    width: 15%;
+       height: 30px;
+       border-radius: 5px;
+       border: 1px solid #ccc;
+       padding: 5px;
+       margin-right: 10px;
+       background-color: gray;
+       background: transparent;
+       cursor: pointer;
+}
+button:hover{
+        
+       border: 1px solid black;
+       border-radius: 5px;
+       border-block-start-color: white;
+       border-block-end-color: white;
+       color:white;
+       cursor: pointer;
+       
+}
+#box{
+       width: 70%;
+       height: 100%;
+       border-radius: 5px;
+       box-shadow: 5px 7px #888888;
+       border: 7px solid #1d0202;
+       padding: 10px;
+       margin-right: 10px;
+       margin-bottom: 10px;
+       position: relative;
+       left: 15%;
+}
+#task{
+        margin-top: 20px;
+        width: 70%;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: 5px 7px #888888;
+        border: 7px solid #1d0202;
+        padding: 10px;
+        margin-right: 10px;
+        position: relative;
+        left: 15%;
+}
+#filters {
+    margin-top: 10px;
+}
+
+#taskList {
+    padding: 0;
+    margin-top: 20px;
+    list-style-type: none;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    
+}
+
+.task {
+    margin-bottom: 5px;
+}
+
+.high-priority {
+    color: red;
+    background-color:lightgreen;
+    font-weight: bold;   
+
+}
+
+.low-priority {
+    color: green;
+    background-color:lightblue;
+}
+.btn{
+   
+       border-radius: 5px;
+       border: 1px solid blue;
+       font-size: medium;
+       background: yellow;
+       cursor: pointer;
+}
+.btn:hover{
+   
+    border-radius: 5px;
+    border: 1px solid red;
+    font-size: medium;
+    background:green;
+    cursor: pointer;
+}
+.ft{
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 7px #888888;
+    border: 7px solid #1d0202;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 15%;
+}
+.footer{
+    margin-left: 20px;
+}
+
+
