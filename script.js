@@ -68,8 +68,9 @@ function renderTasks(filteredTasks = tasks) {
         removeButton.innerHTML = "Remove";
         removeButton.className="btn"
         removeButton.onclick = () => removeTask(task.id);
-        li.appendChild(removeButton);
-
+        // li.appendChild(removeButton);
+        let buttonWrapper = document.createElement("div");
+        buttonWrapper.className="flexRowCC";
         const priorityButton = document.createElement("button");
         if (task.priority === "high") {
             priorityButton.innerHTML = "Low Priority";
@@ -80,7 +81,11 @@ function renderTasks(filteredTasks = tasks) {
             priorityButton.className="btn"
             priorityButton.onclick = () => setPriority(task.id, "high");
         }
-        li.appendChild(priorityButton);
+        buttonWrapper.appendChild(removeButton);
+        buttonWrapper.appendChild(priorityButton);
+
+        // li.appendChild(priorityButton);
+        li.appendChild(buttonWrapper);
 
         taskList.appendChild(li);
     });
