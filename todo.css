@@ -24,8 +24,7 @@ body {
 
 
 button{
-    width: 15%;
-       height: 30px;
+    width: 25%;
        border-radius: 5px;
        border: 1px solid #ccc;
        padding: 5px;
@@ -33,6 +32,7 @@ button{
        background-color: gray;
        background: transparent;
        cursor: pointer;
+       height: max-content;
 }
 button:hover{
         
@@ -65,6 +65,14 @@ button:hover{
 }
 #filters {
     margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: center;
+}
+#filters button{
+    height: max-content;
 }
 
 #taskList {
@@ -90,6 +98,7 @@ button:hover{
 .flexRowCC{
     display: flex;
     flex-direction: row;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
 }
@@ -141,8 +150,4 @@ button:hover{
 .flexRowCC button{
     width: max-content;
 }
-@media screen and (max-width: 1007px) {
-    #box{
-     /* height:200px; */
- }
-    }
+
